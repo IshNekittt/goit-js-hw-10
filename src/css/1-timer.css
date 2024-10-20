@@ -1,57 +1,102 @@
 body {
   margin: 0;
+  font-family: var(--font-family);
 }
-
-.gallery {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  max-width: 1128px;
-  margin: 24px auto;
+main {
+  margin: 36px 156px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  row-gap: 32px;
 }
 
-.gallery-item {
-  flex-basis: calc((100% - 24px * 2) / 3);
-  text-align: center;
-  max-height: 240px;
-  overflow: hidden;
-  transition: transform 0.2s ease;
+.create-timer {
+  column-gap: 8px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-.gallery-link {
-  text-decoration: none;
-}
-
-.gallery-image {
-  display: block;
-  max-width: 100%;
-  object-fit: fill;
-}
-
-.gallery-item:hover {
-  transform: scale(1.06, 1.04);
-}
-
-.gallery-image:hover {
-  cursor: zoom-in;
-}
-
-.is-active {
+#datetime-picker {
+  font-family: inherit;
+  width: 272px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
   box-sizing: border-box;
-  background-color: rgba(46, 47, 66, 0.8);
-  padding: 0 5%;
+  border-radius: 4px;
+  background-color: inherit;
+  outline: none;
+  color: #2e2f42;
+  font-style: normal;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease;
 }
 
-.basicLightbox-container {
-  max-width: 1112px;
+#datetime-picker:hover {
+  border-color: #2e2f42;
 }
 
-.basicLightbox-container img {
-  display: block;
-  max-width: 100%;
+#datetime-picker:focus {
+  border-color: #4e75ff;
+}
+
+#datetime-picker:disabled {
+  background-color: #fafafa;
+  color: #808080;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  width: 75px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-flex;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+button:hover {
+  background: #6c8cff;
+}
+
+button:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+.timer {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 24px;
+}
+.field {
+  width: min-content;
+  height: 72px;
+  font-weight: 400;
+  color: #2e2f42;
+  text-align: center;
+}
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+.label {
+  font-size: 16px;
+  line-height: 1.5;
 }

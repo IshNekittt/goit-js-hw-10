@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css" />
+  <script defer type="module" src="./js/1-timer.js"></script>
 </head>
 <header class="header">
   <div class="container">
@@ -19,6 +20,32 @@
 </header>
 
 <body>
+  <main>
+    <div class="create-timer">
+      <input type="text" id="datetime-picker" />
+      <button type="button" disabled data-start>Start</button>
+    </div>
+
+    <div class="timer">
+      <div class="field">
+        <span class="value" data-days>00</span>
+        <span class="label">Days</span>
+      </div>
+      <div class="field">
+        <span class="value" data-hours>00</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="field">
+        <span class="value" data-minutes>00</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="field">
+        <span class="value" data-seconds>00</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+
+  </main>
 </body>
 
 </html>
