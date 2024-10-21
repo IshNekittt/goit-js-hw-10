@@ -2,13 +2,6 @@
   --font-family: 'Montserrat', sans-serif;
 }
 
-main {
-  margin: 36px 156px;
-  display: flex;
-  flex-direction: row;
-  row-gap: 0;
-}
-
 .form {
   margin: 0;
   width: 360px;

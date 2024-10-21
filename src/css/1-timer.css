@@ -4,6 +4,8 @@ body {
 }
 main {
   margin: 36px 156px;
+}
+.task1-container {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
