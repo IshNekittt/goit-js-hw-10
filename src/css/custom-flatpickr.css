@@ -71,7 +71,16 @@ body .flatpickr-day.nextMonthDay:focus {
 body .iziToast.iziToast-color-red {
   background: #ef4040;
   padding: 20px;
-  padding-right: 60px;
+  padding-right: 80px;
+}
+body .iziToast.iziToast-color-green {
+  background: #59a10d;
+  padding: 20px;
+  padding-right: 80px;
+}
+
+body .iziToast > .iziToast-body .iziToast-icon.ico-success {
+  background-image: none;
 }
 
 body .iziToast > .iziToast-body {
@@ -83,8 +92,7 @@ body .iziToast > .iziToast-body .iziToast-texts {
 }
 
 body .iziToast > .iziToast-body .iziToast-icon.ico-error {
-  background-image: url('../img/error.svg'), url('../img/frame.svg');
-  background-size: 12px, 24px;
+  background-image: none;
 }
 
 body .iziToast > .iziToast-body .iziToast-message {
